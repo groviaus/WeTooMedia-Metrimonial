@@ -198,7 +198,7 @@ export default function HomePage() {
           </div> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6">
             <div className="lg:col-span-1">
-              <div className="relative -mt-5 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative sm:-mt-5 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <Image
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face"
                   alt="Handsome groom in traditional attire"
@@ -210,7 +210,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="lg:col-span-1">
-              <div className="relative mt-8 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative sm:mt-8 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <Image
                   src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=300&h=400&fit=crop"
                   alt="Beautiful bride in elegant dress"
@@ -222,7 +222,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="lg:col-span-1">
-              <div className="relative -mt-5 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative sm:-mt-5 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <Image
                   src="https://images.unsplash.com/photo-1519741497674-611481863552?w=300&h=400&fit=crop"
                   alt="Happy couple celebrating their engagement"
@@ -234,7 +234,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="lg:col-span-1">
-              <div className="relative mt-8 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative sm:mt-8 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <Image
                   src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=300&h=400&fit=crop&crop=face"
                   alt="Elegant bride with traditional jewelry"
@@ -246,7 +246,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="lg:col-span-1">
-              <div className="relative -mt-5 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative sm:-mt-5 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <Image
                   src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=300&h=400&fit=crop"
                   alt="Romantic wedding ceremony moment"
