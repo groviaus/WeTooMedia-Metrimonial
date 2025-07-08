@@ -102,7 +102,7 @@ export default function HomePage() {
         }}
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 lg:mb-8 font-sans">
+          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 lg:mb-8 font-sans">
             Where Love Stories
             <br />
             <span
