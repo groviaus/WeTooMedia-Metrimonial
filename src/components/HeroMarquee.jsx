@@ -36,7 +36,7 @@ const ImageCard = ({ src, alt, index }) => {
   return (
     <div
       className={cn(
-        "relative mx-2 h-96 w-64 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300",
+        "relative mx-2 h-96 w-60 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300",
         "wave-image-card"
       )}
       style={{
@@ -57,18 +57,18 @@ const ImageCard = ({ src, alt, index }) => {
 
 export function HeroMarquee() {
   return (
-    <div className="relative flex w-[90vw] mx-auto flex-col items-center justify-center overflow-x-hidden">
+    <div className="relative flex w- -mt-16 mx-auto flex-col items-center justify-center overflow-x-hidden">
       <Marquee
         pauseOnHover
-        className="[--duration:20s] h-[500px] flex justify-center items-center wave-marquee"
+        className="[--duration:35s] h-[500px] flex justify-center items-center wave-marquee"
       >
         {firstRow.map((image, index) => (
           <ImageCard key={`${image.alt}-${index}`} index={index} {...image} />
         ))}
       </Marquee>
 
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-[2%] bg-gradient-to-r from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-[2%] bg-gradient-to-l from-background"></div>
     </div>
   );
 }
