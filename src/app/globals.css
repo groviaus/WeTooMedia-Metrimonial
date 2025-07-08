@@ -41,6 +41,42 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-wave: wave 3s ease-in-out infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes wave {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  @keyframes wave-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 :root {
@@ -119,4 +155,90 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Wave Marquee Effect */
+.wave-marquee .wave-image-card {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wave-marquee .wave-image-card:nth-child(even) {
+  transform: translateY(-20px);
+}
+
+.wave-marquee .wave-image-card:nth-child(odd) {
+  transform: translateY(20px);
+}
+
+.wave-marquee:hover .wave-image-card {
+  animation-play-state: paused;
+}
+
+/* Dynamic wave effect that changes position based on horizontal movement */
+@keyframes wave-position-1 {
+  0% {
+    transform: translateY(20px);
+  }
+  12.5% {
+    transform: translateY(-20px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  37.5% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  62.5% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  87.5% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes wave-position-2 {
+  0% {
+    transform: translateY(-20px);
+  }
+  12.5% {
+    transform: translateY(20px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  37.5% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  62.5% {
+    transform: translateY(20px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  87.5% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.wave-marquee .wave-image-card:nth-child(odd) {
+  animation: wave-position-1 var(--duration) linear infinite;
+}
+
+.wave-marquee .wave-image-card:nth-child(even) {
+  animation: wave-position-2 var(--duration) linear infinite;
 }

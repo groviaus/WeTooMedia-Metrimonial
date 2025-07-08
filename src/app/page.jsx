@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, Globe, ArrowRight, Heart, Star, Users, Shield, Clock } from "lucide-react"
+import { HeroMarquee } from "@/components/HeroMarquee"
 
 export default function HomePage() {
   return (
@@ -181,21 +182,21 @@ export default function HomePage() {
       </section>
 
       {/* Success Stories Gallery */}
-      <section
+      {/* <section
         className="pb-12 pt-5 lg:pb-20 px-4 sm:px-6 lg:px-8"
         style={{
           background: "linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 241, 242, 0.3) 100%)",
         }}
       >
         <div className="max-w-7xl mx-auto">
-          {/* <div className="text-center mb-12 lg:mb-16">
+          <div className="text-center mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 font-serif">
               Beautiful Love Stories
             </h2>
             <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
               Witness the magic of true love through our success stories
             </p>
-          </div> */}
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6">
             <div className="lg:col-span-1">
               <div className="relative sm:-mt-5 group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -259,7 +260,9 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <HeroMarquee />
 
       {/* Stats Section */}
       <section
