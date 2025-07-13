@@ -115,7 +115,7 @@ const index = () => {
   return (
     <>
       {/* Features Section */}
-      <section className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-20 lg:py-32 px-6 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
@@ -148,7 +148,7 @@ const index = () => {
             return (
               <div key={feature.id} className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${!isLast ? 'mb-20 lg:mb-24' : ''}`}>
                 {/* Image */}
-                <div className={isEven ? "order-2 lg:order-1" : "order-1 lg:order-2"}>
+                <div className={isEven ? "order-1 lg:order-1" : "order-1 lg:order-2"}>
                   <div className="relative">
                     <div className={`absolute inset-0 bg-gradient-to-br ${feature.colors.bg} rounded-3xl transform ${isEven ? 'rotate-3' : '-rotate-3'}`}></div>
                     <div className="relative bg-white rounded-3xl p-8 shadow-xl">
@@ -169,7 +169,7 @@ const index = () => {
                 </div>
 
                 {/* Content */}
-                <div className={isEven ? "order-1 lg:order-2" : "order-2 lg:order-1"}>
+                <div className={isEven ? "order-2 lg:order-2" : "order-2 lg:order-1"}>
                   <div className="space-y-6">
                     <div className={`inline-flex items-center px-4 py-2 ${feature.colors.badge} rounded-full text-sm font-medium`}>
                       <IconComponent className="w-4 h-4 mr-2" />
@@ -178,7 +178,7 @@ const index = () => {
                     <h3 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
                       {feature.title}
                     </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
+                    <p className="text-lg hidden md:block text-gray-600 leading-relaxed">
                       {feature.description}
                     </p>
                     <ul className="space-y-3">
