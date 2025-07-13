@@ -85,7 +85,7 @@ const index = () => {
       icon: Star,
       badge: "Exclusive Network",
       title: "Strong Bureaucrat Network",
-      description: "Our founder has genuine connections within bureaucrat circles, ensuring access to an exclusive network of IAS, IPS officers, doctors, judges, and State PCS officers. This insider network provides you with opportunities to connect with the most suitable matches.",
+      description: "We have genuine connections within bureaucrat circles, ensuring access to an exclusive network of IAS, IPS officers, doctors, judges, and State PCS officers. This insider network provides you with opportunities to connect with the most suitable matches.",
       points: [
         "Direct access to bureaucrat circles",
         "Verified profiles from government services",
