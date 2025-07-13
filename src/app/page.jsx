@@ -3,6 +3,7 @@ import Header from './header'
 import Stats from './stats'
 import Footer from './footer'
 import Features from './features'
+import FAQ from './faq'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
         <Hero />
         <Stats />
         <Features />
+        <FAQ />
         <Footer />
     </div>
   )
