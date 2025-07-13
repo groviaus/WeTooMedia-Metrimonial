@@ -57,7 +57,7 @@ const ImageCard = ({ src, alt, index }) => {
 
 export function HeroMarquee() {
   return (
-    <div className="relative flex -mt-10 sm:-mt-16 mx-auto flex-col items-center justify-center overflow-x-hidden">
+    <div className="relative flex  mx-auto flex-col items-center justify-center overflow-x-hidden">
       <Marquee
         pauseOnHover
         className="[--duration:35s] h-[500px] flex justify-center items-center wave-marquee"
