@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Footer() {  
   return (
     <footer className="bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 border-t border-pink-100">
-      <div className="container mx-auto px-4 py-12 lg:py-16">
+      <div className="container sm:max-w-7xl mx-auto px-4 py-12 lg:py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Logo and Company Info */}
